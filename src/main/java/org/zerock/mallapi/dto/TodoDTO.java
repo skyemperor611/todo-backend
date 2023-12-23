@@ -22,6 +22,6 @@ public class TodoDTO {
 
         private boolean complete;
 
-        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd")
+        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
         private LocalDate dueDate;
 }
