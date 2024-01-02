@@ -27,6 +27,10 @@ public class Product {
 
     private boolean delFlag;
 
+    public void changeDel(boolean delFlag) {
+        this.delFlag = delFlag;
+    }
+
     @ElementCollection
     @Builder.Default
     private List<ProductImage> imageList = new ArrayList<>();
