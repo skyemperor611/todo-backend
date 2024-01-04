@@ -21,6 +21,8 @@ public class ProductDTO {
 
     private int price;
 
+    private String pdesc;
+
     private boolean delFlag;
 
     @Builder.Default

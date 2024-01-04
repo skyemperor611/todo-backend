@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 @Table(name = "tbl_product")
 @Getter
-@ToString
+@ToString(exclude = "imageList")
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -40,11 +40,11 @@ public class Product {
     }
 
     public void changeDesc(String desc) {
-        this.pdesc = pdesc;
+        this.pdesc = desc;
     }
 
     public void changeName(String name) {
-        this.pname = pname;
+        this.pname = name;
     }
 
     public void addImage(ProductImage image) {
